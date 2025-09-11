@@ -9,8 +9,9 @@ import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name="tb_user")
+@Table(name = "tb_user")
 public class User implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -67,7 +68,7 @@ public class User implements Serializable {
     }
 
     public void setPhone(String phone) {
-         this.phone = phone;
+        this.phone = phone;
     }
 
     public void setPassword(String password) {
